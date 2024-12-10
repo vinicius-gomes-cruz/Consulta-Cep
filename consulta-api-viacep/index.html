@@ -21,7 +21,7 @@
             <!-- Linha com CEP -->
             <div class="mb-3">
                 <label for="cep" class="form-label"> <hr>CEP</label>
-                <input type="text" name="cep" id="cep" class="form-control" placeholder="Ex.: 00000000"
+                <input type="text" name="cep" id="cep" class="form-control"
                     onblur="pesquisarPorCEP(this.value)" maxlength="8">
             </div>
 
@@ -29,12 +29,12 @@
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label for="rua" class="form-label">Rua</label>
-                    <input type="text" name="rua" id="rua" class="form-control" placeholder="Ex.: Avenida Brasil"
+                    <input type="text" name="rua" id="rua" class="form-control"
                         required>
                 </div>
                 <div class="col-md-6">
                     <label for="bairro" class="form-label">Bairro</label>
-                    <input type="text" name="bairro" id="bairro" class="form-control" placeholder="Ex.: Centro">
+                    <input type="text" name="bairro" id="bairro" class="form-control">
                 </div>
             </div>
 
@@ -42,12 +42,12 @@
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label for="cidade" class="form-label">Cidade</label>
-                    <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Ex.: São Paulo"
+                    <input type="text" name="cidade" id="cidade" class="form-control"
                         required>
                 </div>
                 <div class="col-md-6">
                     <label for="estado" class="form-label">Estado</label>
-                    <input type="text" name="estado" id="estado" class="form-control" placeholder="Ex.: SP"
+                    <input type="text" name="estado" id="estado" class="form-control
                         maxlength="2" required>
                 </div>
             </div>
@@ -55,7 +55,7 @@
             <!-- Linha com Código IBGE -->
             <div class="mb-3">
                 <label for="ibge" class="form-label">Código IBGE</label>
-                <input type="text" name="ibge" id="ibge" class="form-control" placeholder="Ex.: 3550308" pattern="\d*">
+                <input type="text" name="ibge" id="ibge" class="form-control" pattern="\d*">
             </div>
 
             <!-- Botão de pesquisa -->
@@ -79,7 +79,7 @@
             <div class="mb-3">
                 <label for="rua_form2" class="form-label">Digite o Nome da Rua:</label>
                 <input type="text" id="rua_form2" name="rua_form2" class="form-control"
-                    placeholder="Ex.: Avenida Brasil" required
+                    required
                     onblur="pesquisarPorRua(document.querySelector('#cidades').value, this.value)">
             </div>
         </form>
