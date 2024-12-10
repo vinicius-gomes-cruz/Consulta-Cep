@@ -1,0 +1,64 @@
+:root {
+    --cor: rgb(241, 119, 4);
+    --cor-escura: rgb(0, 0, 0);
+}
+
+body {
+    background: linear-gradient(125deg, rgb(138, 79, 2), rgb(255, 0, 0));
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    width: 600px;
+}
+
+.btn-troca-form {
+    background-color: var(--cor);
+    padding: 10px;
+    transition: .3s;
+}
+
+.btn-troca-form:hover {
+    background-color: var(--cor-escura);
+}
+
+.bg-purple {
+    background-color: var(--cor-escura);
+}
+
+#resultados_ruas {
+    background-color: rgb(117, 117, 117); /* Transparência */
+    height: 150px;
+    border-style: solid;
+    border-radius: 20px;
+    overflow-y: auto;
+    position: relative;
+}
+
+hr {
+    width: 55vh;
+    background-color: black;
+    height: 2px !important;
+}
+
+#resultados_ruas li {
+    background-color: var(--cor);
+}
+
+/* Animações dos formulários */
+#form_pesquisa_cep,
+#form_pesquisa_rua {
+    background: rgba(228, 228, 228, 0.849)  !important;
+    border-radius: 50px;
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
